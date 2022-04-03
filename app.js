@@ -2,7 +2,7 @@ const btn1 = document.getElementById("btn1");
 
 btn1.addEventListener("click", (event) => {
   const { x, y, width, height } = btn1.getBoundingClientRect();
-  const radius = Math.sqrt(width * width + height * height); // btn1의 대각선 길이 & after 원의 반지름 (피타고라스 정리 사용)
+  const radius = Math.sqrt(width * width + height * height); // btn1의 대각선 길이 & after 원의 반지름
 
   btn1.style.setProperty("--diameter", radius * 2 + "px");
 
